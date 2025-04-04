@@ -162,7 +162,7 @@ public class ChangelogActivity extends BaseActivity {
                         final String filename = otaJson.getJSONArray("response")
                                 .getJSONObject(0).getString("filename");
                         final Long fileDate = Long.parseLong(
-                                filename.split("-")[4].substring(0, 8));
+                                filename.split("-")[6].substring(0, 8));
                         final Long buildTime = otaJson.getJSONArray("response")
                                 .getJSONObject(0).getLong("datetime");
                         // fetch and add the changelog of that commit sha
